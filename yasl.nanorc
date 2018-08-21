@@ -1,0 +1,10 @@
+syntax "YASL" "\.ya?sl$"
+header "^#!.*/(env +)?yasl"
+
+color red "[!&|^=:/*+\-\<\>]"
+color brightblue "[A-Za-z][A-Za-z0-9]"
+color brightblue "[][()]"
+color cyan "\<(break|const|continue|else|elseif|enum|fn|for|if|in|let|print|return|while)\>"
+color brightcyan "\<(false|inf|nan|true|undef)\>"
+color yellow "'[^']*'"
+color brightyellow "0x[A-Fa-f0-9]+|0o[0-7]+|0b[01]+|[0-9]+(\.[0-9]+)?"
